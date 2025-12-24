@@ -1,113 +1,100 @@
 <html>
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Georgia, serif;
+      }
 
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Georgia, serif;
-  }
+      /* CANVAS */
+      .canvas {
+        position: relative;
+        width: 1600px;
+        height: 600px;
+        background-image: url("https://raw.githubusercontent.com/GregoriusMarcellinus/jcs/refs/heads/main/Template.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
 
-  /* CANVAS */
-  .canvas {
-    position: relative;
-    background-image: url('https://raw.githubusercontent.com/GregoriusMarcellinus/jcs/refs/heads/main/Template.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 100%;
-    aspect-ratio: 1600 / 600; /* mengikuti rasio image */
-  }
+      /* POSTER */
+      .poster {
+        position: absolute;
+        left: 160px;
+        top: 60px;
+        width: 320px;
+      }
 
-  /* POSTER */
-  .poster {
-    position: absolute;
-    left: 50px;
-    top: 30px;
-    width: 260px;
-  }
+      .poster img {
+        width: 100%;
+        border-radius: 6px;
+      }
 
-  .poster img {
-    width: 40%;
-    border-radius: 6px;
-  }
+      /* TITLE */
+      .title {
+        position: absolute;
+        top: 140px;
+        left: 660px;
+        font-size: 70px;
+        color: #ffffff;
+        font-weight: bold;
+      }
 
-  /* TITLE */
-  .title {
-    position: absolute;
-    top: 60px;
-    left:210px;
-    text-align: center;
-    font-size: 20px;
-    color: #ffffff;
-    font-weight: bold;
-  }
+      /* AUTHOR */
+      .author {
+        position: absolute;
+        top: 220px;
+        left: 750px;
+        font-size: 30px;
+        color: #ffffff;
+      }
 
-  /* AUTHOR */
-  .author {
-    position: absolute;
-    top: 87px;
-    left: 190px;
-    text-align: center;
-    font-size: 15px;
-    color: #ffffff;
-  }
+      /* DETAILS */
+      .details {
+        position: absolute;
+        top: 260px;
+        left: 696px;
+        font-size: 30px;
+        font-weight: bold;
+        color: #ffffff;
+      }
 
-  /* DETAILS */
-  .details {
-    position: absolute;
-    top: 140px;
-    left: 190px;
-    text-align: center;
-    font-size: 12px;
-    font-weight: bold;
-    color: #ffffff;
-  }
+      /* DESCRIPTION */
+      .description {
+        position: absolute;
+        top: 420px;
+        left: 660px;
+        width: 600px;
+        font-size: 16px;
+        line-height: 1.4;
+        color: #ffffff;
+        text-align: justify;
+      }
+    </style>
+  </head>
 
-  /* DESCRIPTION */
-  .description {
-    position: absolute;
-    top: 155px;
-    left: 180px;
-    width: 230px;
-    text-align: justify;
-    font-size: 6px;
-    line-height: 1;
-    color: #ffffff;
-  }
+  <body>
+    <div class="canvas">
+      <div class="poster">
+        <img
+          src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/npOnzAbLh6VOIu3naU5QaEcTepo.jpg"
+        />
+      </div>
 
-</style>
-</head>
+      <div class="title">Castle in the Sky</div>
 
-<body>
+      <div class="author">Director: Grey | Producer: Grey</div>
 
-<div class="canvas">
+      <div class="details">Duration: 02:15 | Rating: 95/100</div>
 
-  <!-- POSTER -->
-  <div class="poster">
-    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/npOnzAbLh6VOIu3naU5QaEcTepo.jpg" alt="Poster">
-  </div>
-
-  <!-- TEXT -->
-  <div class="title">Castle in the Sky</div>
-
-  <div class="author">
-    Director: Grey | Producer: Grey
-  </div>
-
-  <div class="details">
-    Duration: 02:15 | Rating: 95/100
-  </div>
-
-  <div class="description">
-    The orphan Sheeta inherited a mysterious crystal that links her to the mythical
-    sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky
-    pirates, she makes her way to the ruins of the once-great civilization. Sheeta and
-    Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself
-    ruler of the world.
-  </div>
-
-</div>
-
-</body>
+      <div class="description">
+        The orphan Sheeta inherited a mysterious crystal that links her to the
+        mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a
+        rollicking band of sky pirates, she makes her way to the ruins of the
+        once-great civilization. Sheeta and Pazu must outwit the evil Muska, who
+        plans to use Laputa's science to make himself ruler of the world.
+      </div>
+    </div>
+  </body>
 </html>
